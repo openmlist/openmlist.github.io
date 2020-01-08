@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<body><div>
+<body><div id="logbox">
 	<input type="password" id="password">
 <br>
 <input id="button" type="button" value="Login">
@@ -18,9 +18,9 @@ button.addEventListener("click", validate);
 
 function validate(){
   if (input.value == 'bawa') { 
-         div.classList.remove("hidden");
-	  input.classList.add("hidden");
-	btn.classList.add("hidden");
+	document.getElementById("HIDDENDIV").style.display = 'block';
+	document.getElementById('logbox').style.display = 'none';
+
   } else {  
      password.focus();
      password.setSelectionRange(0, password.value.length);   
@@ -34,9 +34,8 @@ input.addEventListener("keydown", function(event){
    validate();
  }
 });
-	</script>
-<br>
-<div id="HIDDENDIV" style="display: hidden;">
+</script>
+<div id="HIDDENDIV" style="display: none;">
 </br><a href="openmlist.github.io/01 High End - Confidential 320Kbps.mp3" target="_blank">01 High End - Confidential 320Kbps.mp3</a>
 </br><a href="openmlist.github.io/01.Animals_(Original_Mix).mp3" target="_blank">01.Animals_(Original_Mix).mp3</a>
 </br><a href="openmlist.github.io/02 Aaja We Mahiya (Imran Khan).mp3" target="_blank">02 Aaja We Mahiya (Imran Khan).mp3</a>
