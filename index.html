@@ -3,7 +3,41 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<body>
+<body><div>
+	<input type="password" id="password">
+<br>
+<input id="button" type="button" value="Login">
+	</div>
+<script>
+var input = document.getElementById("password");
+var div = document.getElementById("HIDDENDIV");
+var btn = document.getElementById("button");
+
+// Set up event handlers in JavaScript
+button.addEventListener("click", validate);
+
+function validate(){
+  if (input.value == 'bawa') { 
+         div.classList.remove('hidden');
+     
+     // Or, add it:
+     input.classList.add("hidden");
+  } else {  
+     password.focus();
+     password.setSelectionRange(0, password.value.length);   
+     alert('Invalid Password!'); 
+  }
+}
+
+input.addEventListener("keydown", function(event){
+ if (event.keyCode === 13){
+  
+   validate();
+ }
+});
+	</script>
+<br>
+<div id="HIDDENDIV" class="hidden">
 </br><a href="openmlist.github.io/01 High End - Confidential 320Kbps.mp3" target="_blank">01 High End - Confidential 320Kbps.mp3</a>
 </br><a href="openmlist.github.io/01.Animals_(Original_Mix).mp3" target="_blank">01.Animals_(Original_Mix).mp3</a>
 </br><a href="openmlist.github.io/02 Aaja We Mahiya (Imran Khan).mp3" target="_blank">02 Aaja We Mahiya (Imran Khan).mp3</a>
@@ -158,5 +192,6 @@
 </br><a href="openmlist.github.io/Light Weight - Kulwinder Billa (DJJOhAL.Com).mp3" target="_blank">Light Weight - Kulwinder Billa (DJJOhAL.Com).mp3</a>
 </br><a href="openmlist.github.io/Wang Da Naap - (Raag.Fm).mp3" target="_blank">Wang Da Naap - (Raag.Fm).mp3</a>
 
+</div>
 </body>
 </html>
