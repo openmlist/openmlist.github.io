@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	Password: <input type="password" value="nopass" id="myInput" onchange="myFunction()">
+	<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+	var y = document.getElementById("main");
+var z = document.getElementById("passbox")
+	
+	if (x.value === "bawa") {
+    y.style.visibility='visible';
+  } else {
+    
+	 z.style.visibility='hidden';
+  }
+}
+</script>
+<div id="main" style="visibility: hidden;">
+</div>
+</body>
+</html>
